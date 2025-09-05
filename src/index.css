@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  cursor: pointer;
+}
+
 .playfair {
   font-family: "Playfair";
   font-optical-sizing: auto;

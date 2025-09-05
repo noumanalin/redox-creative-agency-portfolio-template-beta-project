@@ -2,8 +2,8 @@
 
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === "left" ? 70 : direction === "right" ? -70 : 0,
-    y: direction === "up" ? 70 : direction === "down" ? -70 : 0,
+    x: direction === "left" ? 60 : direction === "right" ? -60 : 0,
+    y: direction === "up" ? 60 : direction === "down" ? -60 : 0,
     opacity: 0,
   },
   show: {
@@ -11,13 +11,16 @@ export const fadeIn = (direction, type, delay, duration) => ({
     y: 0,
     opacity: 1,
     transition: {
-      type,
+      type, // "spring" is good
       delay,
-      duration,
+      duration: duration || 0.8, // slightly longer
+      stiffness: 80, // smoother spring
+      damping: 20,   // less bounce
       ease: "easeOut",
     },
   },
 });
+
 
 
 
