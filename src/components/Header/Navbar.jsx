@@ -118,7 +118,7 @@ const TABS = [
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
 const Navbar = ({className}) => {
-  const [selected, setSelected] = useState(2); // Default to first tab
+  const [selected, setSelected] = useState(null); // Default to first tab
   const [dir, setDir] = useState(null);
   const navbarRef = useRef(null);
 
