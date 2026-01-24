@@ -5,16 +5,16 @@ import { ArrowRight } from "lucide-react";
 
 const stats = [
   {
-    number: 42, suffix: "+", label: <p>High quality demo <br className="hidden md:block" /> templates</p>,
+    number: 50, suffix: "+", label: <p>Modern design <br className="hidden md:block" /> components</p>,
   },
   {
-    number: 22, suffix: "+", label: <p>Necessary inner <br className="hidden md:block" /> pages</p>,
+    number: 30, suffix: "+", label: <p>Pre-built page <br className="hidden md:block" /> layouts</p>,
   },
   {
-    number: null, suffix: "GSAP", label: <p>Built with smooth <br className="hidden md:block" /> animations </p>,
+    number: null, suffix: "Responsive", label: <p>Fully optimized for <br className="hidden md:block" /> all devices</p>,
   },
   {
-    number: 250, suffix: "+", label: <p>Unique and creative <br className="hidden md:block" /> sections</p>,
+    number: 100, suffix: "%", label: <p>Customizable and <br className="hidden md:block" /> flexible</p>,
   },
 ];
 
@@ -26,19 +26,19 @@ const Hero = () => {
         <article>
           <h1 className="text-5xl md:text-8xl">
             <strong>
-              Build agency websites <br />
-              with Redox - <span className="playfair">HTML</span> <br />
-              Template
+              Create stunning websites <br />
+              with modern tools and <br />
+              <span className="playfair">templates</span>
             </strong>
           </h1>
 
           <section className="center-center flex-wrap gap-4 my-20">
             <MyButton initialColor="bg-orange-500 text-gray-100" flipColor="bg-white" className='px-8 py-6 hover:text-gray-900'>
-              <Link to={'/'} className='center-center gap-2'>Purchase Now <ArrowRight size={20} /></Link>
+              <Link to={'/'} className='center-center gap-2'>Get Started <ArrowRight size={20} /></Link>
             </MyButton>
             <p className="text-zinc-300">
-              Life-time license, free updates <br />
-              and 6 months of fast support.
+              Professional quality designs, <br />
+              ready to customize and deploy.
             </p>
           </section>
         </article>

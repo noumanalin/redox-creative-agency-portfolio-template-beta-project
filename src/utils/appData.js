@@ -17,37 +17,30 @@ import creativeAgency from '../assets/creative-agency-2.jpg';
 import DigitalAgencyModern from '../assets/digital-agency-modern.jpg';
 import MarketingAgency from '../assets/marketing-agency-dark-1.jpg';
 import marketingAgency2 from '../assets/marketing-agency-2.jpg';
+import commingSoon from '../assets/commin-soon.png';
+
 import DesignAgencyDark from '../assets/design-agency-dark-1.jpg';
+
 import DesignAgency from '../assets/design-agency-2.jpg';
 import webDevelopmentDark from '../assets/web-development-dark-1.jpg';
 import webDevelopment from '../assets/web-development-2.jpg'; 
-import commingSoon from '../assets/commin-soon.png';
+
+
 
 export const projects = [
-  { name: "digital agency", image: DigitalAgencyDark, link: "/", dark: true },
-  { name: "digital agency", image: DigitalAgency, link: "/", dark: false },
-  { name: "digital agency classic", image: daclassic, link: "/", dark: false },
-  { name: "portfolio horizontal", image: PortfolioHorizontal, link: "/", dark: false },
-  { name: "creative agency", image: creativeAgencyDark, link: "/", dark: true },
-  { name: "creative agency", image: creativeAgency, link: "/", dark: false },
-  { name: "digital agency modern", image: DigitalAgencyModern, link: "/", dark: false },
-  { name: "marketing agency", image: MarketingAgency, link: "/", dark: true },
-  { name: "design agency", image: DesignAgencyDark, link: "/", dark: true },
-  { name: "design agency", image: DesignAgency, link: "/", dark: false },
-  { name: "web development", image: webDevelopmentDark, link: "/", dark: true },
-  { name: "web development", image: webDevelopment, link: "/", dark: false },
-  { name: "digital agency", image: DigitalAgencyDark, link: "/", dark: true },
-  { name: "digital agency", image: DigitalAgency, link: "/", dark: false },
-  { name: "digital agency classic", image: daclassic, link: "/", dark: false },
-  { name: "portfolio horizontal", image: PortfolioHorizontal, link: "/", dark: false },
-  { name: "creative agency", image: creativeAgencyDark, link: "/", dark: true },
-  { name: "creative agency", image: creativeAgency, link: "/", dark: false },
-  { name: "digital agency modern", image: DigitalAgencyModern, link: "/", dark: false },
-  { name: "marketing agency", image: MarketingAgency, link: "/", dark: true },
-  { name: "design agency", image: DesignAgencyDark, link: "/", dark: true },
-  { name: "design agency", image: DesignAgency, link: "/", dark: false },
-  { name: "web development", image: webDevelopmentDark, link: "/", dark: true },
-  { name: "web development", image: webDevelopment, link: "/", dark: false }, 
+  { name: "digital solutions", image: DigitalAgencyDark, link: "/", dark: true },
+  { name: "digital solutions", image: DigitalAgency, link: "/", dark: false },
+  { name: "digital solutions classic", image: daclassic, link: "/", dark: false },
+
+  { name: "portfolio layout", image: PortfolioHorizontal, link: "/", dark: false },
+  { name: "creative solutions", image: creativeAgencyDark, link: "/", dark: true },
+  { name: "creative solutions", image: creativeAgency, link: "/", dark: false },
+
+  { name: "digital solutions modern", image: DigitalAgencyModern, link: "/", dark: false },
+  { name: "marketing solutions", image: MarketingAgency, link: "/", dark: true },
+  { name: "design solutions", image: DesignAgencyDark, link: "/", dark: true },
+
+
   { name: "coming soon", image: commingSoon, link: "/", dark: false },  
   { name: "coming soon", image: commingSoon, link: "/", dark: false },  
   { name: "coming soon", image: commingSoon, link: "/", dark: false },  
@@ -64,41 +57,41 @@ export const projects = [
 
 
 export const lightVersion = [
-  { name: "Digital Agency", link: "#", image: DigitalAgency1, badge: "Exclusive" },
-  { name: "Digital Agency Classic", link: "#", image: daclassic },
-  { name: "Creative Agency", link: "#", image: creativeAgency },
-  { name: "Digital Agency Modern", link: "#", image: DigitalAgencyModern },
-  { name: "Marketing Agency", link: "#", image: marketingAgency2 },
-  { name: "Design Agency", link: "#", image: DesignAgency, badge: "Free" },
-  { name: "Web Development", link: "#", image: webDevelopment },
-  { name: "Modern Agency", link: "#", image: ModernAgency },
+  { name: "Digital Solutions", link: "#", image: DigitalAgency1, badge: "Exclusive" },
+  { name: "Digital Solutions Classic", link: "#", image: daclassic },
+  { name: "Creative Solutions", link: "#", image: creativeAgency },
+  { name: "Digital Solutions Modern", link: "#", image: DigitalAgencyModern },
+  { name: "Marketing Solutions", link: "#", image: marketingAgency2 },
+  { name: "Design Solutions", link: "#", image: DesignAgency, badge: "Free" },
+  { name: "Web Solutions", link: "#", image: webDevelopment },
+  { name: "Modern Solutions", link: "#", image: ModernAgency },
   { name: "Coming Soon", link: "#", image: commingSoon },
 ];
 
 export const darkVersion = [
-  { name: "Digital Agency", link: "#", image: DigitalAgencyDark, badge: "Exclusive" },
-  { name: "Creative Agency", link: "#", image: creativeAgencyDark },
-  { name: "Marketing Agency", link: "#", image: MarketingAgency },
-  { name: "Design Agency", link: "#", image: DesignAgencyDark, badge: "Free" },
-  { name: "Web Development", link: "#", image: webDevelopmentDark },
+  { name: "Digital Solutions", link: "#", image: DigitalAgencyDark, badge: "Exclusive" },
+  { name: "Creative Solutions", link: "#", image: creativeAgencyDark },
+  { name: "Marketing Solutions", link: "#", image: MarketingAgency },
+  { name: "Design Solutions", link: "#", image: DesignAgencyDark, badge: "Free" },
+  { name: "Web Solutions", link: "#", image: webDevelopmentDark },
   { name: "Coming Soon", link: "#", image: commingSoon },
 ];
 
 export const portfolio = [
-  { name: "Portfolio Horizontal", link: "#", image: PortfolioHorizontal },
-  { name: "Showcase", link: "#", image: ShowCase2 },
-  { name: "Creative Agency", link: "#", image: creativeAgency },
-  { name: "Modern Agency", link: "#", image: ModernAgency },
-  { name: "Web Development", link: "#", image: webDevelopment },
+  { name: "Portfolio Layout", link: "#", image: PortfolioHorizontal },
+  { name: "Showcase Display", link: "#", image: ShowCase2 },
+  { name: "Creative Solutions", link: "#", image: creativeAgency },
+  { name: "Modern Solutions", link: "#", image: ModernAgency },
+  { name: "Web Solutions", link: "#", image: webDevelopment },
   { name: "Coming Soon", link: "#", image: commingSoon },
   { name: "Coming Soon", link: "#", image: commingSoon },
 ];
 
 export const portfolioDark = [
-  { name: "Portfolio Horizontal", link: "#", image: PortfolioHorizontal },
-  { name: "Creative Agency", link: "#", image: creativeAgencyDark },
-  { name: "Marketing Agency", link: "#", image: MarketingAgency },
-  { name: "Web Development", link: "#", image: webDevelopmentDark },
+  { name: "Portfolio Layout", link: "#", image: PortfolioHorizontal },
+  { name: "Creative Solutions", link: "#", image: creativeAgencyDark },
+  { name: "Marketing Solutions", link: "#", image: MarketingAgency },
+  { name: "Web Solutions", link: "#", image: webDevelopmentDark },
   { name: "Coming Soon", link: "#", image: commingSoon },
   { name: "Coming Soon", link: "#", image: commingSoon },
 ];
@@ -106,10 +99,10 @@ export const portfolioDark = [
 
 
 export const imageInfiniteSlider = [
-    {src:DesignAgency2, alt:"Design Agency Image"},
-    {src:DigitalAgency1, alt:"Digital Agency Image"},
-    {src:ModernAgency, alt:"Moern Agency Image"},
-    {src:ShowCase2, alt:"Showcase Image"},
+    {src:DesignAgency2, alt:"Design Solutions Image"},
+    {src:DigitalAgency1, alt:"Digital Solutions Image"},
+    {src:ModernAgency, alt:"Modern Solutions Image"},
+    {src:ShowCase2, alt:"Showcase Display Image"},
 ]
 
 

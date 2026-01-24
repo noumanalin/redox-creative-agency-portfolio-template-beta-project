@@ -34,11 +34,11 @@ const Projects = () => {
               className="px-8 py-4   relative self-end "
             >
               <Link to={'/'} className='flex items-center gap-2 relative z-10'>
-                Purchase Now <ArrowRight size={20} />
+                View All <ArrowRight size={20} />
               </Link>
             </MyButton>
             <span className="absolute z-50 -top-8 -right-2 rounded-full bg-[#98f027] text-zinc-800  text-sm   py-2 px-3 text-center">
-              Only <br /> <span className="text-zinc-950"><strong>$9</strong></span>
+              Featured <br /> <span className="text-zinc-950"><strong>Work</strong></span>
             </span>
           </div>
 

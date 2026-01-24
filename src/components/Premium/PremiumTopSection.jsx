@@ -1,15 +1,21 @@
 import { motion } from "framer-motion";
 import CounterAnimation from "../../utils/CounterAnimation";
-import { containerVariants, delayedContainerVariants, waveVariants, fadeInVariants } from "../../utils/motion";
+import {
+  containerVariants,
+  delayedContainerVariants,
+  waveVariants,
+  fadeInVariants,
+} from "../../utils/motion";
 
 const PremiumTopSection = () => {
-  const words = ["80+", "Premium"];
-  const charText = "elements included";
+  const words = ["80+", "Advanced"];
+  const charText = "components provided";
+
   return (
     <article className="max-w-4xl mx-auto text-center">
       {/* Heading – first line (wave per WORD) */}
       <motion.h2
-        className="flex flex-wrap justify-center gap-2 text-3xl md:text-7xl font-semibold text-gray-100 "
+        className="flex flex-wrap justify-center gap-2 text-3xl md:text-7xl font-semibold text-gray-100"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -17,10 +23,10 @@ const PremiumTopSection = () => {
       >
         {words.map((word, i) => (
           <motion.span key={i} variants={waveVariants}>
-            {word === "81+" ? (
+            {word === "80+" ? (
               <span className="flex items-center">
                 <CounterAnimation
-                  number={81}
+                  number={80}
                   color="text-gray-100"
                   speed={3}
                   fs="text-3xl md:text-7xl"
@@ -43,15 +49,15 @@ const PremiumTopSection = () => {
         viewport={{ once: false, amount: 0.3 }}
       >
         {charText.split("").map((char, i) => {
-          // Apply .moon-dance class only for "elements"
-          const isElements =
-            i < "elements".length; // indexes 0–7 are "elements"
+          // Apply .moon-dance class only for "components"
+          const isStyled =
+            i < "components".length; // first word only
 
           return (
             <motion.span
               key={i}
               variants={waveVariants}
-              className={`inline-block ${isElements ? "moon-dance " : ""}`}
+              className={`inline-block ${isStyled ? "moon-dance" : ""}`}
             >
               {char === " " ? "\u00A0" : char}
             </motion.span>
@@ -68,12 +74,14 @@ const PremiumTopSection = () => {
         viewport={{ once: false, amount: 0.3 }}
         transition={{ delay: 0.3 }}
       >
-        Take advantage of the complete set of dedicated tools that help you
-        generate more <br />
-        traffic, leads, and conversions. You don&apos;t need dozens of plugins anymore.
+        Access a thoughtfully assembled set of practical building blocks
+        designed to help you grow engagement, increase conversions, and
+        streamline development.
+        <br />
+        Fewer external dependencies are needed to achieve professional results.
       </motion.p>
     </article>
-  )
-}
+  );
+};
 
-export default PremiumTopSection
+export default PremiumTopSection;

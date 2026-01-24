@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import CounterAnimation from "../../utils/CounterAnimation";
-import { containerVariants, delayedContainerVariants, waveVariants, fadeInVariants } from "../../utils/motion";
-
+import {
+  containerVariants,
+  delayedContainerVariants,
+  waveVariants,
+  fadeInVariants,
+} from "../../utils/motion";
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -15,18 +19,18 @@ const staggerContainer = {
 };
 
 const ProjectsTop = () => {
-  const words = ["Get", "started", "with"];
-  const normalText = "pre-built ";
-  const specialText = "websites."; // this will use Moon Dance font
+  const words = ["Start", "your", "path"];
+  const normalText = "with flexible ";
+  const specialText = "layouts."; // Moon Dance / Playfair font
 
   const features = [
-    { title: "Easy Customization" },
-    { title: "Light & Dark mode" },
-    { title: "Premium Support" },
+    { title: "Easy to Customize" },
+    { title: "Light & Dark Modes" },
+    { title: "Dedicated Support" },
   ];
 
   return (
-    <article className="text-center ">
+    <article className="text-center">
       {/* First H2: Wave per WORD */}
       <motion.h2
         className="flex flex-wrap justify-center gap-2 text-3xl md:text-7xl font-semibold text-gray-900 mb-1"
@@ -42,7 +46,7 @@ const ProjectsTop = () => {
         ))}
         <motion.span variants={waveVariants} className="flex items-center">
           <CounterAnimation
-            number={43}
+            number={50}
             color="text-gray-900"
             speed={2}
             fs="text-3xl md:text-7xl"
@@ -51,7 +55,7 @@ const ProjectsTop = () => {
         </motion.span>
       </motion.h2>
 
-      {/* Second H2: Split into normal and Moon Dance parts */}
+      {/* Second H2 */}
       <motion.h2
         className="flex flex-wrap justify-center gap-1 text-3xl md:text-7xl font-bold text-gray-900 mb-10"
         variants={delayedContainerVariants}
@@ -59,14 +63,14 @@ const ProjectsTop = () => {
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
       >
-        {/* Normal text characters */}
+        {/* Normal text */}
         {normalText.split("").map((char, i) => (
           <motion.span key={`normal-${i}`} variants={waveVariants}>
             {char === " " ? "\u00A0" : char}
           </motion.span>
         ))}
 
-        {/* Special word "websites." with Moon Dance font */}
+        {/* Special styled text */}
         {specialText.split("").map((char, i) => (
           <motion.span
             key={`special-${i}`}
@@ -78,7 +82,7 @@ const ProjectsTop = () => {
         ))}
       </motion.h2>
 
-      {/* Award-Winning Design Collection */}
+      {/* Subtitle */}
       <motion.p
         className="text-lg text-gray-600"
         variants={fadeInVariants}
@@ -86,7 +90,7 @@ const ProjectsTop = () => {
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
       >
-        Award-Winning Design Collection
+        Curated Design Library
       </motion.p>
 
       {/* Description */}
@@ -98,10 +102,10 @@ const ProjectsTop = () => {
         viewport={{ once: false, amount: 0.3 }}
         transition={{ delay: 0.3 }}
       >
-        Explore a stunning collection of pre-designed templates.
+        Explore a carefully crafted collection of ready-made layouts.
         <br className="hidden sm:block" />
-        Each template is fully customizable—mix and match different sections to
-        create your unique layout with ease.
+        Each design is fully adaptable—mix and match sections to build
+        a unique interface with ease.
       </motion.p>
 
       {/* Features */}
